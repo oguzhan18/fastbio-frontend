@@ -431,14 +431,14 @@ const Edit = () => {
                       <AvatarFallback>{previewProfile.username}</AvatarFallback>
                     </Avatar>
                     <div className="max-w-xl flex flex-col justify-center items-center lg:mx-8 mt-3">
-                      <p className="sm:max-w-md my-3 text-center">
-                        {previewProfile.bio}
-                      </p>
-                      <div className="flex w-full justify-end items-center max-w-md">
-                        s                        <div className="md:text-xl text-lg">
+                      <div className="flex w-full justify-center items-center max-w-md">
+                        <div className="md:text-xl text-lg">
                           {previewProfile.name}
                         </div>
                       </div>
+                      <p className="sm:max-w-md my-3 text-center">
+                        {previewProfile.bio}
+                      </p>
                       <div className="mt-2 sm:max-w-md flex flex-wrap items-center space-x-10">
                         <div className="flex flex-col">
                           <div className="flex flex-wrap">
