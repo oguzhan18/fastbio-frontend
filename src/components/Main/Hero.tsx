@@ -28,7 +28,7 @@ const Hero = () => {
           </p>
           <div className="mt-12 flex items-center justify-center gap-x-6">
             <Link href="/login">
-              <Button>{"Get Started -> "}</Button>
+              <Button className="text-white">{"Get Started -> "}</Button>
             </Link>
           </div>
         </div>

@@ -171,12 +171,10 @@ const Edit = () => {
         image.src = event.target.result as string;
         image.onload = () => {
           const canvas = document.createElement("canvas");
-          const maxWidth = 500; // set your desired maximum width
-          const maxHeight = 500; // set your desired maximum height
+          const maxWidth = 500;  
+          const maxHeight = 500; 
           let width = image.width;
-          let height = image.height;
-
-          // Resize the image if it exceeds the maximum dimensions
+          let height = image.height; 
           if (width > maxWidth || height > maxHeight) {
             const ratio = Math.min(maxWidth / width, maxHeight / height);
             width *= ratio;
@@ -188,10 +186,8 @@ const Edit = () => {
 
           const ctx = canvas.getContext("2d");
           if (ctx) {
-            ctx.drawImage(image, 0, 0, width, height);
-
-            // Convert canvas content to base64
-            const base64 = canvas.toDataURL("image/jpeg", 0.7); // Adjust the quality as needed
+            ctx.drawImage(image, 0, 0, width, height); 
+            const base64 = canvas.toDataURL("image/jpeg", 0.7);
 
             setImage(base64);
           }

@@ -502,7 +502,7 @@ const ProfilePage = () => {
                             </div>
                           </div>
                         </div>
-                        <Button className="w-full" type="submit">
+                        <Button className="w-full text-white" type="submit">
                           Save
                         </Button>
                       </div>

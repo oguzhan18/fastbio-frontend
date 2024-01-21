@@ -30,37 +30,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-interface GitHubStarButtonProps {
-  owner: string;
-  repo: string;
-}
-
-const GitHubStarButton: React.FC<GitHubStarButtonProps> = ({ owner, repo }) => {
-  const [starCount, setStarCount] = useState(null);
-
-  useEffect(() => {
-    const fetchStarCount = async () => {
-      try {
-        const response = await axios.get(
-          `https://api.github.com/repos/${owner}/${repo}`
-        );
-        setStarCount(response.data.stargazers_count);
-      } catch (error) {
-        console.error("Error fetching GitHub star count:", error);
-      }
-    };
-
-    fetchStarCount();
-  }, [owner, repo]);
-
-  return (
-    <Button variant={"outline"} className="flex gap-2">
-      <Star className="w-5 h-5 text-primary/50" />
-      <p>Star on GitHub</p>
-      {starCount !== null ? `${starCount}` : ""}
-    </Button>
-  );
-};
+ 
 
 function Navbar() {
   const [cookies, setCookies] = useCookies(["access_token", "username"]);
@@ -108,8 +78,7 @@ function Navbar() {
           <Link
             href="https://github.com/srajankumar/fastbio/stargazers"
             target="_blank"
-          >
-            <GitHubStarButton owner="srajankumar" repo="fastbio" />
+          > 
           </Link>
           <Logout />
         </div>
