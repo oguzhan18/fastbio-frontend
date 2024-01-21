@@ -188,11 +188,10 @@ export default function Username({ params }: { params: { username: string } }) {
     return (
       <div className="flex flex-col w-full h-[100dvh] justify-center items-center">
         <div className="max-w-xl flex flex-col justify-center items-center">
-          <Skeleton className="w-40 mb-6 h-40 rounded-full" />
-          <Skeleton className="w-80 mb-3 h-5 rounded-xl" />
-          <div className="flex w-full justify-end items-center max-w-md">
-             <div className="text-xl">loading</div>
+          <div className="flex w-full justify-center items-center max-w-md">
+            <img className="loading-img" width={300} src="/fast-bio.png" alt="" />
           </div>
+          <div className="text-xl">loading</div>
         </div>
       </div>
     );
@@ -266,10 +265,11 @@ export default function Username({ params }: { params: { username: string } }) {
               <AvatarFallback>{profileData.username}</AvatarFallback>
             </Avatar>
             <div className="max-w-xl flex flex-col justify-center items-center mx-8 mt-3">
-              <p className="sm:max-w-md my-3 text-center">{profileData.bio}</p>
-              <div className="flex w-full justify-end items-center max-w-md">
-                 <div className="md:text-xl text-lg">{profileData.name}</div>
+            <div className="flex w-full justify-center items-center max-w-md">
+                <div className="md:text-xl text-lg">{profileData.name}</div>
               </div>
+              <p className="sm:max-w-md my-3 text-center">{profileData.bio}</p>
+            
               <div className="mt-2 sm:max-w-md flex flex-wrap items-center space-x-10">
                 <div className="flex flex-col">
                   <div className="flex flex-wrap">

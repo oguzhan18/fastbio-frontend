@@ -69,9 +69,8 @@ const ProfilesGrid: React.FC<ProfilesGridProps> = ({ selectedProfileId }) => {
                   <AvatarFallback>{profile.username}</AvatarFallback>
                 </Avatar>
                 <div className="max-w-xl flex flex-col justify-center items-center mx-8 mt-3">
-                  <div className="flex w-full justify-end items-center max-w-md">
-                    <div className="w-20 rounded-full h-1 mr-2 bg-gradient-to-r from-background via-[#8ebec0] to-[#3604b1]" />
-                    <div className="text-xs">@{profile.username}</div>
+                  <div className="flex w-full justify-center items-center max-w-md">
+                     <div className="text-xs">@{profile.username}</div>
                   </div>
                   {profile.name}
                 </div>
@@ -97,14 +96,12 @@ const ProfilesGrid: React.FC<ProfilesGridProps> = ({ selectedProfileId }) => {
                 key={index}
                 className="md:w-fit w-full md:m-5 my-5 hover:scale-[102%] transition-all duration-200"
               >
-                <div className="flex border rounded-2xl h-40 md:w-80 w-full flex-col justify-center items-center">
-                  <Skeleton className="rounded-full w-20 h-20"></Skeleton>
-                  <div className="max-w-xl flex flex-col justify-center items-center mx-8 mt-3">
-                    <div className="flex w-full justify-end items-center max-w-md">
-                      <div className="w-20 rounded-full h-1 mr-2 bg-gradient-to-r from-background via-[#8ebec0] to-[#3604b1]" />
-                      <Skeleton className="w-20 h-3" />{" "}
+                <div className="flex flex-col w-full h-[100dvh] justify-center items-center">
+                  <div className="max-w-xl flex flex-col justify-center items-center">
+                    <div className="flex w-full justify-center items-center max-w-md">
+                      <img className="loading-img" width={300} src="/fast-bio.png" alt="" />
                     </div>
-                    <Skeleton className="w-32 h-3 mt-3" />
+                    <div className="text-xl">loading</div>
                   </div>
                 </div>
               </div>
