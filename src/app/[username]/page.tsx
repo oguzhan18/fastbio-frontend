@@ -298,7 +298,7 @@ export default function Username({ params }: { params: { username: string } }) {
                       </Button>
                     </AlertDialogTrigger>
                     <button
-                      className="cursor-pointer hover:scale-110 transition-all duration-200"
+                      className="cursor-pointer hover:scale-110 transition-all duration-200 text-white"
                       disabled={isProfileSaved(profileData._id)}
                       onClick={() => saveProfile(profileData._id)}
                     >

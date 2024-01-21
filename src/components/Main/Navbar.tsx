@@ -56,7 +56,7 @@ function Navbar() {
         </Link>
         {existingProfile ? (
           <Link href="/admin">
-            <Button>My Face</Button>
+            <Button className="text-white">My Face</Button>
           </Link>
         ) : (
           <div className="flex gap-x-3">

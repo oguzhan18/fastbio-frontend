@@ -84,7 +84,7 @@ const ProfilesGrid: React.FC<ProfilesGridProps> = ({ selectedProfileId }) => {
             You haven&apos;t saved any faces yet.
           </div>
           <Link href="/search">
-            <Button>Search Faces</Button>
+            <Button className="text-white">Search Faces</Button>
           </Link>
         </div>
       ) : (
