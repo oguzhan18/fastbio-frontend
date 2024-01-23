@@ -302,19 +302,6 @@ export default function Username({ params }: { params: { username: string } }) {
                       disabled={isProfileSaved(profileData._id)}
                       onClick={() => saveProfile(profileData._id)}
                     >
-                      {isProfileSaved(profileData._id) ? (
-                        <img
-                          src="/saved.png"
-                          className="h-10 w-full"
-                          alt="star"
-                        />
-                      ) : (
-                        <img
-                          src="/save.png"
-                          className="h-10 w-full"
-                          alt="star"
-                        />
-                      )}
                     </button>
                   </div>
                   <AlertDialogContent>
