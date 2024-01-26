@@ -1,9 +1,4 @@
-# <p align="center"><img src="https://github.com/oguzhan18/fastbio-frontend/blob/main/public/fast-bio.png?raw=true" align="center" width="150"> Fast Bio </p>
- 
- <b>Build your awesome profile and easily share it with your connections for free! Create a standout online presence that reflects your uniqueness.</b>
- 
-
-
+![fastbio-frontend](https://socialify.git.ci/oguzhan18/fastbio-frontend/image?description=1&font=Jost&forks=1&issues=1&language=1&logo=https%3A%2F%2Fgithub.com%2Foguzhan18%2Ffastbio-frontend%2Fraw%2Fmain%2Fpublic%2Ffast-bio.png%3Fraw%3Dtrue&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Auto)
 
 ## Badges
 
